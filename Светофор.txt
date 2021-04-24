@@ -1,0 +1,46 @@
+void setup()
+{
+  //Первый светофор
+  pinMode(13, OUTPUT);
+  pinMode(10, OUTPUT);
+  pinMode(11, OUTPUT);
+  //Второй светофор
+  pinMode(9, OUTPUT);
+  pinMode(8, OUTPUT);
+  pinMode(7, OUTPUT);
+  //Третий светофор
+  pinMode(5, OUTPUT);
+  pinMode(4, OUTPUT);
+  pinMode(3, OUTPUT);
+}
+
+void loop()
+{
+  //Первый этап
+  digitalWrite(13, HIGH);
+  digitalWrite(9, HIGH);
+  digitalWrite(3, HIGH);
+  delay(3000);
+  digitalWrite(13, LOW);
+  digitalWrite(9, LOW);
+  digitalWrite(3, LOW);
+  
+  //Второй этап
+  digitalWrite(10, HIGH);
+  digitalWrite(8, HIGH);
+  digitalWrite(4, HIGH);
+  delay(3000);
+  digitalWrite(10, LOW);
+  digitalWrite(8, LOW);
+  digitalWrite(4, LOW);
+  
+  //Третий этап
+  digitalWrite(11, HIGH);
+  digitalWrite(7, HIGH);
+  digitalWrite(5, HIGH);
+  delay(3000);
+  digitalWrite(11, LOW);
+  digitalWrite(7, LOW);
+  digitalWrite(5, LOW);
+  
+}
